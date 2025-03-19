@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <!-- 背景 -->
+  <rect width="900" height="600" fill="#f8f9fa" />
+  
+  <!-- タイトル -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#333">Obsidianと外部ツールの連携フロー</text>
+  
+  <!-- Obsidian (中央) -->
+  <circle cx="450" cy="250" r="100" fill="#7749bd" fill-opacity="0.8" stroke="#5a2ca0" stroke-width="3" />
+  <text x="450" y="240" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">Obsidian</text>
+  <text x="450" y="270" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">知的生産の中心</text>
+  
+  <!-- インプットツール (左上) -->
+  <rect x="100" y="80" width="200" height="130" rx="10" ry="10" fill="#69c0ff" stroke="#1890ff" stroke-width="2" />
+  <text x="200" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">インプットツール</text>
+  <text x="200" y="140" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Web Clipper</text>
+  <text x="200" y="165" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Kindle Highlights</text>
+  <text x="200" y="190" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• LINE</text>
+  
+  <!-- Cursor (右上) -->
+  <rect x="600" y="80" width="200" height="130" rx="10" ry="10" fill="#95de64" stroke="#52c41a" stroke-width="2" />
+  <text x="700" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">Cursor</text>
+  <text x="700" y="140" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• AI分析・整理</text>
+  <text x="700" y="165" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• 自動タグ付け</text>
+  <text x="700" y="190" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• コンテンツ生成</text>
+  
+  <!-- 同期ツール (左下) -->
+  <rect x="100" y="380" width="200" height="130" rx="10" ry="10" fill="#ffc069" stroke="#fa8c16" stroke-width="2" />
+  <text x="200" y="410" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">同期・保存ツール</text>
+  <text x="200" y="440" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Github</text>
+  <text x="200" y="465" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• S3 / ストレージ</text>
+  <text x="200" y="490" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Obsidian Mobile</text>
+  
+  <!-- アウトプットツール (右下) -->
+  <rect x="600" y="380" width="200" height="160" rx="10" ry="10" fill="#ff9c6e" stroke="#ff7a45" stroke-width="2" />
+  <text x="700" y="410" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#333">アウトプットツール</text>
+  <text x="700" y="440" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Anki</text>
+  <text x="700" y="465" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Slidev</text>
+  <text x="700" y="490" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• ebook2audiobook</text>
+  <text x="700" y="515" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">• Googleカレンダー</text>
+  
+  <!-- 連携フロー矢印 -->
+  <!-- インプット → Obsidian -->
+  <path d="M300 145 Q 350 145, 370 200 L 390 230" fill="none" stroke="#1890ff" stroke-width="3" marker-end="url(#arrowhead1)" />
+  <text x="320" y="135" font-family="Arial, sans-serif" font-size="12" fill="#1890ff">情報取得</text>
+  
+  <!-- Obsidian → Cursor -->
+  <path d="M520 200 Q 560 160, 600 145" fill="none" stroke="#52c41a" stroke-width="3" marker-end="url(#arrowhead2)" />
+  <text x="560" y="170" font-family="Arial, sans-serif" font-size="12" fill="#52c41a">分析依頼</text>
+  
+  <!-- Cursor → Obsidian -->
+  <path d="M600 170 Q 560 210, 520 250" fill="none" stroke="#52c41a" stroke-width="3" marker-end="url(#arrowhead2)" />
+  <text x="530" y="210" font-family="Arial, sans-serif" font-size="12" fill="#52c41a">整理・生成</text>
+  
+  <!-- Obsidian → 同期ツール -->
+  <path d="M390 290 Q 320 340, 300 380" fill="none" stroke="#fa8c16" stroke-width="3" marker-end="url(#arrowhead3)" />
+  <text x="320" y="340" font-family="Arial, sans-serif" font-size="12" fill="#fa8c16">保存・同期</text>
+  
+  <!-- 同期ツール → Obsidian -->
+  <path d="M250 380 Q 320 320, 380 270" fill="none" stroke="#fa8c16" stroke-width="3" marker-end="url(#arrowhead3)" />
+  <text x="280" y="310" font-family="Arial, sans-serif" font-size="12" fill="#fa8c16">ノート同期</text>
+  
+  <!-- Obsidian → アウトプットツール -->
+  <path d="M520 290 Q 580 340, 600 380" fill="none" stroke="#ff7a45" stroke-width="3" marker-end="url(#arrowhead4)" />
+  <text x="570" y="340" font-family="Arial, sans-serif" font-size="12" fill="#ff7a45">知識活用</text>
+  
+  <!-- アウトプットツール → 外部 -->
+  <path d="M700 540 L 700 580" fill="none" stroke="#ff7a45" stroke-width="3" marker-end="url(#arrowhead4)" />
+  <text x="710" y="560" font-family="Arial, sans-serif" font-size="12" fill="#ff7a45">最終成果物</text>
+  
+  <!-- オプショナルな接続 -->
+  <path d="M200 210 Q 200 300, 350 310" fill="none" stroke="#1890ff" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead1)" />
+  <path d="M700 210 Q 700 300, 550 310" fill="none" stroke="#52c41a" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead2)" />
+  <path d="M550 350 Q 500 450, 300 450" fill="none" stroke="#5a2ca0" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead5)" />
+  
+  <!-- 矢印のマーカー -->
+  <defs>
+    <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1890ff" />
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#52c41a" />
+    </marker>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#fa8c16" />
+    </marker>
+    <marker id="arrowhead4" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff7a45" />
+    </marker>
+    <marker id="arrowhead5" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5a2ca0" />
+    </marker>
+  </defs>
+</svg>
